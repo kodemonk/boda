@@ -1,0 +1,28 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fdf8f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0cec7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Decorative line top -->
+  <line x1="400" y1="120" x2="800" y2="120" stroke="#bfa094" stroke-width="1"/>
+
+  <!-- Small text top -->
+  <text x="600" y="170" text-anchor="middle" font-family="Georgia, serif" font-size="24" fill="#977669" letter-spacing="8">NOS CASAMOS</text>
+
+  <!-- Names -->
+  <text x="600" y="280" text-anchor="middle" font-family="Georgia, serif" font-size="72" fill="#43302b">Alejandro</text>
+  <text x="600" y="340" text-anchor="middle" font-family="Georgia, serif" font-size="42" fill="#bfa094">&amp;</text>
+  <text x="600" y="420" text-anchor="middle" font-family="Georgia, serif" font-size="72" fill="#43302b">Elvira</text>
+
+  <!-- Decorative line bottom -->
+  <line x1="450" y1="470" x2="750" y2="470" stroke="#bfa094" stroke-width="1"/>
+
+  <!-- Date -->
+  <text x="600" y="530" text-anchor="middle" font-family="Georgia, serif" font-size="32" fill="#846358">12 de Septiembre de 2026</text>
+</svg>

@@ -7,7 +7,14 @@
       "Bash(git push:*)",
       "Bash(npm run build:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(npx netlify-cli --version)",
+      "Bash(npx netlify-cli status)",
+      "Bash(npx netlify-cli:*)",
+      "Bash(dig:*)",
+      "Bash(nslookup:*)",
+      "Bash(curl:*)",
+      "Bash(node -e:*)"
     ]
   }
 }
