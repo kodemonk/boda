@@ -1,6 +1,7 @@
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Countdown from './components/Countdown'
+import Ubicacion from './components/Ubicacion'
 import RSVP from './components/RSVP'
 import Footer from './components/Footer'
 
@@ -12,7 +13,7 @@ function App() {
         <Hero />
         <Countdown />
         {/* TODO: Añadir sección "Nuestra Historia" */}
-        {/* TODO: Añadir sección "Ubicación" con mapa */}
+        <Ubicacion />
         <RSVP />
       </main>
       <Footer />
