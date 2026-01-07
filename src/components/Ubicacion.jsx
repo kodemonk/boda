@@ -83,20 +83,20 @@ function Ubicacion() {
           <div className="space-y-4">
             <div className="rounded-2xl overflow-hidden shadow-lg">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.8847392845!2d-7.3386!3d43.5728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd31c4f7c7a7f3a7%3A0x4b9e4e1b7c7c7c7c!2sBas%C3%ADlica%20de%20San%20Marti%C3%B1o%20de%20Mondo%C3%B1edo!5e0!3m2!1ses!2ses!4v1699999999999!5m2!1ses!2ses"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.5!2d-7.2597!3d43.5605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd31bbf3f3f3f3f3%3A0x1234567890abcdef!2sMalates%20Slow%20Boutique%20Hotel!5e0!3m2!1ses!2ses!4v1699999999999!5m2!1ses!2ses"
                 width="100%"
                 height="400"
                 style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Ubicación de la Basílica de San Martiño de Mondoñedo"
+                title="Ubicación del Hotel Malates, Foz"
                 className="w-full"
               />
             </div>
 
             <a
-              href="https://www.google.com/maps/dir//Basílica+de+San+Martiño+de+Mondoñedo,+Foz,+Lugo"
+              href="https://www.google.com/maps/dir//Malates+Slow+Boutique+Hotel,+Rúa+Asteleiros+7,+27780+Foz,+Lugo"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 w-full py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors"
