@@ -2,6 +2,7 @@ import { useState } from 'react'
 
 function RSVP() {
   const [submitted, setSubmitted] = useState(false)
+  const [willAttend, setWillAttend] = useState(null)
   const [formData, setFormData] = useState({
     nombre: '',
     email: '',
@@ -29,6 +30,7 @@ function RSVP() {
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: new URLSearchParams(data).toString()
       })
+      setWillAttend(formData.asistencia === 'si')
       setSubmitted(true)
     } catch (error) {
       alert('Error al enviar. Por favor, inténtalo de nuevo.')
@@ -40,17 +42,35 @@ function RSVP() {
       <section id="confirmar" className="py-20 bg-primary-50">
         <div className="max-w-2xl mx-auto px-4 text-center">
           <div className="bg-white rounded-2xl p-8 shadow-lg">
-            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-              </svg>
-            </div>
-            <h3 className="text-2xl font-display text-gray-800 mb-4">
-              ¡Gracias por confirmar!
-            </h3>
-            <p className="text-gray-600">
-              Hemos recibido tu confirmación. ¡Nos vemos el 12 de Septiembre!
-            </p>
+            {willAttend ? (
+              <>
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-display text-gray-800 mb-4">
+                  ¡Qué alegría!
+                </h3>
+                <p className="text-gray-600">
+                  Hemos recibido tu confirmación. ¡Nos vemos el 12 de Septiembre!
+                </p>
+              </>
+            ) : (
+              <>
+                <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg className="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-display text-gray-800 mb-4">
+                  ¡Qué pena que no puedas venir!
+                </h3>
+                <p className="text-gray-600">
+                  Gracias por avisarnos. Te echaremos de menos en este día tan especial.
+                </p>
+              </>
+            )}
           </div>
         </div>
       </section>
