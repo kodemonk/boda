@@ -1,6 +1,7 @@
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Countdown from './components/Countdown'
+import RSVP from './components/RSVP'
 import Footer from './components/Footer'
 
 function App() {
@@ -10,7 +11,9 @@ function App() {
       <main className="flex-grow">
         <Hero />
         <Countdown />
-        {/* Aquí irán más secciones: Info, Ubicación, Confirmación, etc. */}
+        {/* TODO: Añadir sección "Nuestra Historia" */}
+        {/* TODO: Añadir sección "Ubicación" con mapa */}
+        <RSVP />
       </main>
       <Footer />
     </div>

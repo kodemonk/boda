@@ -11,6 +11,17 @@
     <title>Alejandro & Elvira - 12 Septiembre 2026</title>
   </head>
   <body>
+    <!-- Formulario oculto para que Netlify detecte los campos -->
+    <form name="confirmacion-boda" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="nombre" />
+      <input type="email" name="email" />
+      <input type="text" name="asistencia" />
+      <input type="text" name="acompanantes" />
+      <input type="text" name="nombresAcompanantes" />
+      <input type="text" name="alergias" />
+      <textarea name="mensaje"></textarea>
+    </form>
+
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
