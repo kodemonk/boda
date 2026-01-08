@@ -3,7 +3,7 @@ function Footer() {
     <footer className="bg-primary-900 text-white py-8">
       <div className="max-w-6xl mx-auto px-4 text-center">
         <p className="font-display text-2xl mb-2">
-          Alejandro & Elvira
+          Elvira & Alejandro
         </p>
         <p className="text-primary-200 text-sm">
           12 de Septiembre de 2026

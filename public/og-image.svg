@@ -13,12 +13,12 @@
   <line x1="400" y1="120" x2="800" y2="120" stroke="#bfa094" stroke-width="1"/>
 
   <!-- Small text top -->
-  <text x="600" y="170" text-anchor="middle" font-family="Georgia, serif" font-size="24" fill="#977669" letter-spacing="8">NOS CASAMOS</text>
+  <text x="600" y="170" text-anchor="middle" font-family="Georgia, serif" font-size="24" fill="#977669" letter-spacing="8">¡NOS VAMOS DE BODA!</text>
 
   <!-- Names -->
-  <text x="600" y="280" text-anchor="middle" font-family="Georgia, serif" font-size="72" fill="#43302b">Alejandro</text>
+  <text x="600" y="280" text-anchor="middle" font-family="Georgia, serif" font-size="72" fill="#43302b">Elvira</text>
   <text x="600" y="340" text-anchor="middle" font-family="Georgia, serif" font-size="42" fill="#bfa094">&amp;</text>
-  <text x="600" y="420" text-anchor="middle" font-family="Georgia, serif" font-size="72" fill="#43302b">Elvira</text>
+  <text x="600" y="420" text-anchor="middle" font-family="Georgia, serif" font-size="72" fill="#43302b">Alejandro</text>
 
   <!-- Decorative line bottom -->
   <line x1="450" y1="470" x2="750" y2="470" stroke="#bfa094" stroke-width="1"/>

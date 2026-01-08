@@ -5,9 +5,11 @@ function Header() {
 
   const menuItems = [
     { label: 'Inicio', href: '#inicio' },
-    { label: 'Nuestra Historia', href: '#historia' },
+    { label: 'Historia', href: '#historia' },
     { label: 'La Boda', href: '#boda' },
-    { label: 'Ubicación', href: '#ubicacion' },
+    { label: 'Alojamiento', href: '#alojamiento' },
+    { label: 'Cómo Llegar', href: '#como-llegar' },
+    { label: 'Pre-boda', href: '#preboda' },
     { label: 'Confirmar', href: '#confirmar' },
   ]
 
@@ -17,11 +19,11 @@ function Header() {
         <div className="flex items-center justify-between">
           {/* Logo / Nombres */}
           <a href="#inicio" className="font-display text-xl md:text-2xl text-primary-700">
-            A & E
+            E & A
           </a>
 
           {/* Menu Desktop */}
-          <ul className="hidden md:flex items-center gap-8">
+          <ul className="hidden lg:flex items-center gap-6 text-sm">
             {menuItems.map((item) => (
               <li key={item.href}>
                 <a
@@ -37,7 +39,7 @@ function Header() {
           {/* Menu Mobile Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2"
+            className="lg:hidden p-2"
             aria-label="Abrir menú"
           >
             <svg
@@ -67,7 +69,7 @@ function Header() {
 
         {/* Menu Mobile */}
         {isMenuOpen && (
-          <ul className="md:hidden mt-4 pb-4 space-y-4">
+          <ul className="lg:hidden mt-4 pb-4 space-y-4">
             {menuItems.map((item) => (
               <li key={item.href}>
                 <a

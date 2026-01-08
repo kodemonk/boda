@@ -10,6 +10,7 @@ function RSVP() {
     acompanantes: '0',
     nombresAcompanantes: '',
     alergias: '',
+    transporte: '',
     mensaje: ''
   })
 
@@ -224,6 +225,40 @@ function RSVP() {
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition"
                   placeholder="Celiaco, vegetariano, alergia a frutos secos..."
                 />
+              </div>
+
+              {/* Transporte */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  ¿Necesitáis autobús a la ceremonia?
+                </label>
+                <div className="flex gap-4">
+                  <label className="flex items-center gap-2 cursor-pointer">
+                    <input
+                      type="radio"
+                      name="transporte"
+                      value="si"
+                      checked={formData.transporte === 'si'}
+                      onChange={handleChange}
+                      className="w-4 h-4 text-primary-600 focus:ring-primary-500"
+                    />
+                    <span>Sí, necesitamos bus</span>
+                  </label>
+                  <label className="flex items-center gap-2 cursor-pointer">
+                    <input
+                      type="radio"
+                      name="transporte"
+                      value="no"
+                      checked={formData.transporte === 'no'}
+                      onChange={handleChange}
+                      className="w-4 h-4 text-primary-600 focus:ring-primary-500"
+                    />
+                    <span>No, iremos por nuestra cuenta</span>
+                  </label>
+                </div>
+                <p className="text-gray-500 text-xs mt-2">
+                  Salidas desde Malates (12:45h) y Oca Playa de Foz (13:00h)
+                </p>
               </div>
             </>
           )}
