@@ -4,13 +4,13 @@ function Alojamientos() {
       nombre: "Malates Slow Boutique Hotel",
       estrellas: 3,
       imagen: "/images/malates.jpg",
-      descripcion: "Alojamiento en una antigua zona de astilleros de ribera a pie de Ría donde los paisajes cambiantes unen mar y tierra en un entorno mágico.",
+      descripcion: "Sede de nuestro banquete. Una antigua zona de astilleros de ribera a pie de Ría donde los paisajes cambiantes unen mar y tierra en un entorno mágico.",
       detalle: "14 habitaciones con encanto",
       descuento: "15% de descuento",
       codigo: "1team1dream",
       comoReservar: "Usar código al reservar",
       web: "https://malatesboutiquehotel.com",
-      destacado: true
+      destacado: false
     },
     {
       nombre: "Oca Playa Foz Hotel y Spa",
@@ -54,16 +54,8 @@ function Alojamientos() {
           {alojamientos.map((aloj, index) => (
             <div
               key={index}
-              className={`bg-white rounded-2xl overflow-hidden shadow-lg flex flex-col ${
-                aloj.destacado ? 'ring-2 ring-primary-500' : ''
-              }`}
+              className="bg-white rounded-2xl overflow-hidden shadow-lg flex flex-col"
             >
-              {aloj.destacado && (
-                <div className="bg-primary-500 text-white text-center py-2 text-sm font-medium">
-                  Sede del Banquete
-                </div>
-              )}
-
               {/* Imagen */}
               <div className="relative h-48 overflow-hidden">
                 <img
