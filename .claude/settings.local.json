@@ -17,7 +17,8 @@
       "Bash(node -e:*)",
       "WebSearch",
       "Bash(file:*)",
-      "Bash(sips:*)"
+      "Bash(sips:*)",
+      "Bash(NETLIFY_DEBUG=true npx netlify-cli deploy:*)"
     ]
   }
 }

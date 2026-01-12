@@ -2,13 +2,15 @@ function Hero() {
   return (
     <section
       id="inicio"
-      className="min-h-screen flex items-center justify-center relative pt-16"
+      className="min-h-screen flex items-center justify-center relative pt-16 md:bg-[#2c1810]"
     >
-      {/* Background image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url(/images/hero-pareja.jpg)' }}
-      >
+      {/* Background image - cover en móvil, contain en PC */}
+      <div className="absolute inset-0 flex items-center justify-center">
+        <img
+          src="/images/hero-pareja.jpg"
+          alt="Elvira y Alejandro"
+          className="w-full h-full object-cover md:object-contain"
+        />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60"></div>
       </div>
 
