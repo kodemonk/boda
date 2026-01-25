@@ -30,7 +30,7 @@ function Hero() {
 
         <div className="w-24 h-px bg-white/50 mx-auto mb-6"></div>
 
-        <p className="text-xl md:text-2xl font-bold mb-2 drop-shadow">
+        <p className="text-xl md:text-2xl font-black mb-2 drop-shadow">
           12 de Septiembre de 2026
         </p>
 
