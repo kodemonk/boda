@@ -16,8 +16,14 @@ npm run preview  # Preview production build locally
 
 ## Deployment
 
-- Hosted on **Netlify** with auto-deploy from `main` branch
-- Push to `main` triggers automatic build and deployment
+- Hosted on **Netlify** at https://alexyelvira.com
+- **IMPORTANTE**: Auto-deploy desde GitHub NO funciona. Siempre desplegar manualmente con:
+
+```bash
+npm install && netlify deploy --build --prod
+```
+
+- El proyecto ya está vinculado a Netlify (site: `boda-alex-elvira`)
 - Build output: `dist/` directory
 
 ## Architecture
