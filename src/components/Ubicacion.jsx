@@ -120,20 +120,16 @@ function Ubicacion() {
         </div>
 
         {/* Celebración solo adultos */}
-        <div className="bg-amber-50 border-2 border-amber-300 rounded-2xl p-6 md:p-8 mb-12 text-center">
-          <div className="flex justify-center mb-4">
-            <div className="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center">
-              <svg className="w-7 h-7 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-          </div>
-          <h3 className="font-display text-xl text-amber-800 mb-3">
+        <div className="bg-white border-2 border-primary-200 rounded-2xl p-6 md:p-8 mb-12 text-center">
+          <h3 className="font-display text-xl text-primary-800 mb-3 flex items-center justify-center gap-2">
+            <svg className="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
             Celebración solo para adultos
           </h3>
-          <p className="text-amber-700 max-w-lg mx-auto leading-relaxed">
+          <p className="text-gray-600 text-sm leading-relaxed max-w-lg mx-auto">
             Queremos que todos disfrutéis al máximo de este día, por lo que hemos decidido que sea una
-            <strong> celebración exclusivamente para adultos</strong>. Esperamos contar con vuestra comprensión.
+            <strong className="text-primary-700"> celebración exclusivamente para adultos</strong>. Esperamos contar con vuestra comprensión.
           </p>
         </div>
 

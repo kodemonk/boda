@@ -6,9 +6,9 @@ function Alojamientos() {
       imagen: "/images/malates.jpg",
       descripcion: "Sede de nuestro banquete. Una antigua zona de astilleros de ribera a pie de Ría donde los paisajes cambiantes unen mar y tierra en un entorno mágico.",
       detalle: "14 habitaciones con encanto",
-      descuento: "15% de descuento",
+      descuento: null,
       codigo: null,
-      comoReservar: "Habitaciones bloqueadas. Reservar llamando al teléfono disponible en su web",
+      comoReservar: "Habitaciones bloqueadas. Reservas por teléfono: +34 722 157 665",
       web: "https://malatesboutiquehotel.com",
       destacado: false
     },
@@ -30,9 +30,9 @@ function Alojamientos() {
       imagen: "/images/apartagal.jpg",
       descripcion: "La opción perfecta si buscáis espacio, independencia y sentiros como en casa en Foz. Apartamentos y casas para todos los gustos.",
       detalle: "Apartamentos y casas",
-      descuento: "15% de descuento",
+      descuento: null,
       codigo: null,
-      comoReservar: "Habitaciones y apartamentos bloqueados. Reservar llamando al teléfono disponible en su web",
+      comoReservar: "Apartamentos/casas bloqueadas. Reservas por teléfono: +34 638 826 268",
       web: "https://www.apartagal.com",
       destacado: false
     }
@@ -86,7 +86,9 @@ function Alojamientos() {
                 </p>
 
                 <div className="bg-green-50 rounded-lg p-3 mb-4">
-                  <p className="text-green-700 font-medium text-sm">{aloj.descuento}</p>
+                  {aloj.descuento && (
+                    <p className="text-green-700 font-medium text-sm">{aloj.descuento}</p>
+                  )}
                   {aloj.codigo && (
                     <p className="text-green-600 text-xs mt-1">
                       Código: <span className="font-mono font-bold">{aloj.codigo}</span>
