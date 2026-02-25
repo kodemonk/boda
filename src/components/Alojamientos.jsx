@@ -7,20 +7,20 @@ function Alojamientos() {
       descripcion: "Sede de nuestro banquete. Una antigua zona de astilleros de ribera a pie de Ría donde los paisajes cambiantes unen mar y tierra en un entorno mágico.",
       detalle: "14 habitaciones con encanto",
       descuento: "15% de descuento",
-      codigo: "1team1dream",
-      comoReservar: "Usar código al reservar",
+      codigo: null,
+      comoReservar: "Habitaciones bloqueadas. Reservar llamando al teléfono disponible en su web",
       web: "https://malatesboutiquehotel.com",
       destacado: false
     },
     {
-      nombre: "Oca Playa Foz Hotel y Spa",
+      nombre: "Hotel Playa de Foz",
       estrellas: 4,
       imagen: "/images/oca.jpg",
       descripcion: "Hotel ubicado frente a la Playa Rapadoira, con acceso directo al arenal y al paseo costero. Dispone de Spa para relajarse.",
       detalle: "Frente a la playa",
-      descuento: "15% de descuento",
+      descuento: "15% de descuento sobre tarifa",
       codigo: null,
-      comoReservar: "Llamar al hotel y mencionar la boda de Elvira y Alejandro",
+      comoReservar: "Habitaciones bloqueadas. Pendiente de indicarnos cómo proceder con las reservas",
       web: "https://www.ocahotels.com/hotel-playa-foz",
       destacado: false
     },
@@ -31,8 +31,8 @@ function Alojamientos() {
       descripcion: "La opción perfecta si buscáis espacio, independencia y sentiros como en casa en Foz. Apartamentos y casas para todos los gustos.",
       detalle: "Apartamentos y casas",
       descuento: "15% de descuento",
-      codigo: "1team1dream",
-      comoReservar: "Usar código al reservar",
+      codigo: null,
+      comoReservar: "Habitaciones y apartamentos bloqueados. Reservar llamando al teléfono disponible en su web",
       web: "https://www.apartagal.com",
       destacado: false
     }

@@ -254,7 +254,7 @@ function RSVP() {
               </label>
             </div>
             <p className="text-gray-500 text-xs mt-2">
-              Salidas desde Malates (12:45h) y Oca Playa de Foz (13:00h)
+              Salidas desde Malates (12:45h) y Hotel Playa de Foz (13:00h)
             </p>
           </div>
 
