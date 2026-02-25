@@ -10,6 +10,7 @@ function RSVP() {
     acompanantes: '0',
     nombresAcompanantes: '',
     alergias: '',
+    preboda: '',
     transporte: '',
     mensaje: ''
   })
@@ -222,6 +223,37 @@ function RSVP() {
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition"
               placeholder="Celiaco, vegetariano, alergia a frutos secos..."
             />
+          </div>
+
+          {/* Pre-boda */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">
+              ¿Vendréis a la pre-boda? (Viernes 11 de Septiembre, Tapia de Casariego)
+            </label>
+            <div className="flex gap-4">
+              <label className="flex items-center gap-2 cursor-pointer">
+                <input
+                  type="radio"
+                  name="preboda"
+                  value="si"
+                  checked={formData.preboda === 'si'}
+                  onChange={handleChange}
+                  className="w-4 h-4 text-primary-600 focus:ring-primary-500"
+                />
+                <span>Sí, ¡allí estaremos!</span>
+              </label>
+              <label className="flex items-center gap-2 cursor-pointer">
+                <input
+                  type="radio"
+                  name="preboda"
+                  value="no"
+                  checked={formData.preboda === 'no'}
+                  onChange={handleChange}
+                  className="w-4 h-4 text-primary-600 focus:ring-primary-500"
+                />
+                <span>No podremos ir</span>
+              </label>
+            </div>
           </div>
 
           {/* Transporte */}
